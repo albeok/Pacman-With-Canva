@@ -180,9 +180,6 @@ const handleWinDeath=()=>{
 };
 
 const animate=()=>{
-	// setTimeout(()=>{
-		// animationId=requestAnimationFrame(animate);		
-	// },1000/1000);
 	animationId=requestAnimationFrame(animate);
 	updateMap();
 	handleSounds();

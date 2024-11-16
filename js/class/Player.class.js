@@ -17,7 +17,7 @@ class Player{
 		let radians=0.75;
 		let openRate=0.12;
 		const radius=12;
-		const defaultVel=2;
+		const defaultVel=1;
 		const positionsAccepted=[45,75,105,135,165,195,225,255,285,315,345,375,405,435,465,495,525,555,585,615,645,675,705];
 		const keyActions=[
 			{	

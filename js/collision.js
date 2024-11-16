@@ -100,7 +100,7 @@ const ghostCollision=(_ghost,_index)=>{
 			updateScore(200);
 			audio['eatGhost'].play();
 			setTimeout(()=>{
-				_ghost.setDefaultVelocity(2);
+				_ghost.setDefaultVelocity(1);
 				_ghost.setScared(false);
 				_ghost.setPosition(345,285);
 				if(ghosts.length<4){

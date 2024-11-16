@@ -15,7 +15,7 @@ class Ghost{
 		let position=_position;
 		let velocity=_velocity;
 		let grid={x:0,y:0};
-		let defaultVel=2;
+		let defaultVel=1;
 		let color=_color;
 		let scared=false;
 		const positionsAccepted=[45,75,105,135,165,195,225,255,285,315,345,375,405,435,465,495,525,555,585,615,645,675,705];
