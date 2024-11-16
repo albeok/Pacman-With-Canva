@@ -1,4 +1,50 @@
 body{
-	margin:0;
+	margin:0 px;
 	background-color:black;
+}
+.info p{
+	display:inline-block;
+}
+p{
+	color:white;
+	font-family:sans-serif;
+	font-size:14px;
+	margin-bottom:10px;
+}
+.lp{
+	margin-left:60px;
+}
+.rp{
+	margin-left:450px;
+}
+.lightbox{
+	display:none;
+	font-size:20px;
+	font-family:sans-serif;
+	position:absolute;
+	padding:50px 80px;
+	background-color:black;
+	border:2px solid white;
+	margin-left:17%;
+	margin-top:17%;
+	text-aling:50%;
+	color:yellow;
+}
+.play{
+	cursor:pointer;
+	font-size:25px;
+	font-family:sans-serif;
+	position:absolute;
+	padding:350px;
+	background-color:black;
+	text-aling:50%;
+	color:white;
+}
+.ready{
+	display:none;
+	position:absolute;
+	color:yellow;
+	font-size:30px;
+	margin-left:290px;
+	margin-top:370px;
 }
