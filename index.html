@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="it">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>PACMAN</title>
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<style>
+		body{
+			margin:0 px;
+	
+		}
+		.info p{
+			display:inline-block;
+		}
+		p{
+			color:white;
+			font-family:sans-serif;
+			font-size:14px;
+			margin-bottom:10px;
+		}
+		.lp{
+			margin-left:60px;
+		}
+		.rp{
+			margin-left:450px;
+		}
+		.lightbox{
+			display:none;
+			font-size:20px;
+			font-family:sans-serif;
+			position:absolute;
+			padding:50px 80px;
+			background-color:black;
+			border:2px solid white;
+			margin-left:17%;
+			margin-top:17%;
+			text-aling:50%;
+			color:yellow;
+		}
+		.play{
+			cursor:pointer;
+			font-size:25px;
+			font-family:sans-serif;
+			position:absolute;
+			padding:350px;
+			background-color:black;
+			text-aling:50%;
+			color:white;
+		}
+		.ready{
+			display:none;
+			position:absolute;
+			color:yellow;
+			font-size:30px;
+			margin-left:290px;
+			margin-top:370px;
+		}
+	</style>
+	<body>
+		<div class="play">CLICK TO PLAY</div>
+		<div class="ready">READY!</div>
+		<div class="info">
+			<p class="lp">Score: <span id="score">0</span></p>
+			<p class="rp">Vite: <span id="life">3</span></p>
+		</div>
+		<div 
+			class="lightbox" 
+			>YOU <span class="status">WIN</span>!
+		</div>
+		<canvas class="canvas"></canvas>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+		<script src="js/class/Boundary.class.js"></script>
+		<script src="js/class/Door.class.js"></script>
+		<script src="js/class/Food.class.js"></script>
+		<script src="js/class/PowerPill.class.js"></script>
+		<script src="js/class/Ghost.class.js"></script>
+		<script src="js/class/Player.class.js"></script>
+		<script src="js/map.js"></script>
+		<script src="js/utils.js"></script>
+		<script src="js/collision.js"></script>
+		<script src="js/events.js"></script>
+		<script src="js/app.js"></script>
+	</body>
+</html>
