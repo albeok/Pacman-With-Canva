@@ -157,6 +157,7 @@ const handleWinDeath=()=>{
 	}
 	if(win){
 		$('.lightbox').show();
+		audio['siren'].pause();
 		cancelAnimationFrame(animationId);
 	}
 	if(death){

@@ -35,18 +35,7 @@ const checkCollision=(_player,_movement)=>{
 	const blocks=getSurroundingBlocks(x,y,map);
 
 	if(blocks[_movement]!==" "&&blocks[_movement]!=="."&&blocks[_movement]!=="o"&&blocks[_movement]!=='B'){
-		if(_movement==="left"){
-			return (pixel['x']==x*Boundary.distance+Boundary.distance/2);
-		}
-		else if(_movement==="right"){
-			return (pixel['x']==x*Boundary.distance+Boundary.distance/2);
-		}
-		else if(_movement==="up"){
-			return (pixel['y']==y*Boundary.distance+Boundary.distance/2);
-		}
-		else{
-			return (pixel['y']==y*Boundary.distance+Boundary.distance/2);
-		}
+		return (pixel['x']==x*Boundary.distance+Boundary.distance/2);
 	}
 	else{
 		return false;
