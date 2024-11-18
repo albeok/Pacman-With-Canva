@@ -57,35 +57,35 @@ const setupInitialMove=()=>{
 		interlock=true;
 	}
 	if(!hasCollision(pacman,lastKeyCode)&&inCorrectPosition(pacman)){
-		console.log("BEGIN processMovement. Moving.");
+		// console.log("BEGIN processMovement. Moving.");
 		movements[lastKeyCode].action();
 		rotation=pacman.rotation(movements[lastKeyCode].movement);
 		lastApprovedKeyCode=lastKeyCode;
 		keyDownPressed=false;
 	}
 	else if(programmedMove&&!hasCollision(pacman,lastApprovedKeyCode)&&inCorrectPosition(pacman)){
-		console.log("BEGIN processMovement. moving with programmed");
+		// console.log("BEGIN processMovement. moving with programmed");
 		movements[lastApprovedKeyCode].action();
 		rotation=pacman.rotation(movements[lastApprovedKeyCode].movement);
 	}
 	else if(lastKeyCode&&hasCollision(pacman,lastApprovedKeyCode)&&keyDownPressed){
-		console.log("BEGIN processMovement. Don't let pacman passing through the walls.");
+		// console.log("BEGIN processMovement. Don't let pacman passing through the walls.");
 		pacman.clearVelocity();
 	}
 	else if(hasCollision(pacman,lastKeyCode)&&keyDownPressed){
-		console.log("BEGIN processMovement. Scheduling next move.");
+		// console.log("BEGIN processMovement. Scheduling next move.");
 		programmedMove=true;
 		keyDownPressed=false;
 	}
 	else if(!programmedMove&&hasCollision(pacman,lastKeyCode)){
-		console.log("BEGIN processMovement. Stop Pacman due to collision.");
+		// console.log("BEGIN processMovement. Stop Pacman due to collision.");
 		pacman.clearVelocity();
 		lastKeyCode=null;
 		initialGame=false;
 		lastKeyCode=null;
 	}
 	else if(programmedMove&&hasCollision(pacman,lastApprovedKeyCode)){
-		console.log("BEGIN processMovement. Stop Pacman due to collision from programmed move.");
+		// console.log("BEGIN processMovement. Stop Pacman due to collision from programmed move.");
 		pacman.clearVelocity();
 		programmedMove=false;
 		initialGame=false;
