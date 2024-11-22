@@ -1,4 +1,5 @@
 class Player{
+	static staticVel=2;
 	constructor(
 	{
 		_position={
@@ -17,7 +18,7 @@ class Player{
 		let radians=0.75;
 		let openRate=0.12;
 		const radius=12;
-		const defaultVel=1;
+		const defaultVel=Player.staticVel;
 		const positionsAccepted=[45,75,105,135,165,195,225,255,285,315,345,375,405,435,465,495,525,555,585,615,645,675,705];
 		const keyActions=[
 			{	

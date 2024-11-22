@@ -122,6 +122,7 @@ const processMovement=()=>{
 
 const handleGhostsMovement=()=>{
 	ghosts.forEach((ghost,i)=>{
+		console.log(Ghost.staticVel);
 		ghostMovement(ghost,i);
 		ghostCollision(ghost,i);
 		ghost.update();

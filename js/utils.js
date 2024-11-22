@@ -63,9 +63,10 @@ const handleScaredEvent=()=>{
 	scared=true;
 	ghosts.forEach(ghost=>{
 		ghost.setScared(true);
-		ghost.setDefaultVelocity(0.5);
+		console.log(Ghost.staticVel);
+		ghost.setDefaultVelocity(Ghost.staticVel/2);
 		setTimeout(()=>{
-			ghost.setDefaultVelocity(1);
+			ghost.setDefaultVelocity(Ghost.staticVel);
 			ghost.setScared(false);
 			scared=false;
 		},10000);
